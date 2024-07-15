@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\drawable\**" />
+    <Compile Remove="Новая папка\**" />
+    <EmbeddedResource Remove="Resources\drawable\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="Resources\drawable\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\EditAttestationPage.cs" />
+    <Compile Remove="Views\SignUpPage.xaml.cs" />
+    <Compile Remove="Views\SignUpPageDetail.xaml.cs" />
+    <Compile Remove="Views\SignUpPageFlyout.xaml.cs" />
+    <Compile Remove="Views\SignUpPageFlyoutMenuItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\SignUpPage.xaml" />
+    <EmbeddedResource Remove="Views\SignUpPageDetail.xaml" />
+    <EmbeddedResource Remove="Views\SignUpPageFlyout.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Fonts\SedanSC-Regular.ttf" />
+    <None Remove="Images\attestations.png" />
+    <None Remove="Images\auth_splash.jpg" />
+    <None Remove="Images\rating.png" />
+    <None Remove="Images\settings.png" />
+    <None Remove="Images\settings_logo.png" />
+    <None Remove="Images\sign_in.png" />
+    <None Remove="Images\sign_up.png" />
+    <None Remove="Images\test_logo.jpg" />
+    <None Remove="Resources\Fonts\Geist.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\attestations.png" />
+    <EmbeddedResource Include="Images\auth_splash.jpg" />
+    <EmbeddedResource Include="Images\rating.png" />
+    <EmbeddedResource Include="Images\settings.png" />
+    <EmbeddedResource Include="Images\settings_logo.png" />
+    <EmbeddedResource Include="Images\sign_in.png" />
+    <EmbeddedResource Include="Images\sign_up.png" />
+    <EmbeddedResource Include="Images\test_logo.jpg" />
+    <EmbeddedResource Include="Resources\Fonts\Geist.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microcharts" Version="0.9.5.9" />
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Plugin.Toast" Version="2.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\SedanSC-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AttestationsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EditAttestationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RatingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

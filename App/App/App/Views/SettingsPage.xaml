@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.SettingsPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="icon_check.png" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="20">
+            <Image x:Name="image" HorizontalOptions="FillAndExpand" Margin="0,0,0,60" HeightRequest="320" Aspect="AspectFill" />
+            <Entry x:Name="Email" FontFamily="Geist" FontSize="20" TextColor="Black" Placeholder="Email" />
+            <Entry x:Name="FirstName" FontFamily="Geist" TextColor="Black" FontSize="20" Placeholder="Имя" />
+            <Entry x:Name="LastName" FontFamily="Geist" TextColor="Black" FontSize="20" Placeholder="Фамилия" />
+            <Entry x:Name="Password" FontFamily="Geist" TextColor="Black" FontSize="20" Placeholder="Пароль" IsPassword="True" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

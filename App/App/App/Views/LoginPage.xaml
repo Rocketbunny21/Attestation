@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             BackgroundColor="#F6EDDE"
+             mc:Ignorable="d"
+             x:Class="App.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>        
+        <StackLayout x:Name="contentLayout" Padding="10,100,10,10" VerticalOptions="FillAndExpand" Spacing="20" BackgroundColor="#fefae0">
+            <Image x:Name="image" HorizontalOptions="FillAndExpand" HeightRequest="192" Aspect="AspectFill" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

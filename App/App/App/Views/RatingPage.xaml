@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.RatingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="image" HorizontalOptions="FillAndExpand" Margin="0,0,0,20" HeightRequest="320" Aspect="AspectFill" />
+            <StackLayout x:Name="MainStackLayout" Padding="10,10,10,10" Spacing="20"></StackLayout>
+        </StackLayout>        
+    </ContentPage.Content>
+</ContentPage>

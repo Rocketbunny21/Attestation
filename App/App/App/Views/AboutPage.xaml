@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.AboutPage"
+             xmlns:vm="clr-namespace:App.ViewModels" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image x:Name="image" HorizontalOptions="FillAndExpand" HeightRequest="320" Aspect="AspectFill" />
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,20,30,24" Spacing="40">
+
+                <StackLayout Orientation="Vertical" Spacing="10" x:Name="dynamicLayout">
+                    <Label x:Name="title" Text="Loading..." FontSize="32" Padding="0,0,0,30" TextColor="Black" FontFamily="Geist" />
+                </StackLayout>
+
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Button CornerRadius="60" Text="Подтвердить" FontSize="20" Clicked="Button_Clicked" FontFamily="Geist" BackgroundColor="#606c38" />
+                </StackLayout>
+
+                <forms:ChartView x:Name="chartView" HeightRequest="200"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

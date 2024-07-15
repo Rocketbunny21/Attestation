@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.ItemDetailPage"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="15">
+            <ScrollView>
+                <StackLayout x:Name="FrameContainer">
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+        </ContentPage.Content>
+
+</ContentPage>
